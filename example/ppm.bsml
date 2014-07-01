@@ -1,0 +1,13 @@
+ppm
+    rawString "P6\n"
+    int->string width
+    rawString " "
+    int->string height
+    rawString "\n"
+    int->string quant
+    struct[width*height] pixel
+
+pixel
+    oct red
+    oct green
+    oct blue
